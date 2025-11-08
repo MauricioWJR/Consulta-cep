@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+  <link rel="icon" type="image/png" href="favicon.ico.png">
+</head>
+
+  <title>Consulta CEP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="Consulta-Cep-Logo.png" alt="Consulta CEP" class="logo" />
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Consulta de Endereços</h1>
+
+      <section class="card">
+        <h2>Buscar por CEP</h2>
+        <input type="text" id="cep" placeholder="Digite o CEP (ex: 01001-000)">
+        <button id="buscarCep">Buscar</button>
+      </section>
+
+      <section class="card">
+        <h2>Buscar por Logradouro</h2>
+        <input type="text" id="logradouro" placeholder="Digite o logradouro (ex: Avenida Ceará)">
+        <button id="buscarLogradouro">Buscar</button>
+      </section>
+
+      <section class="card">
+        <h2>Buscar por Cidade</h2>
+        <input type="text" id="cidade" placeholder="Digite a cidade (ex: Rio Branco)">
+        <button id="buscarCidade">Buscar</button>
+      </section>
+
+      <section class="card">
+        <h2>Cadastrar Novo Endereço</h2>
+        <input type="text" id="novoCep" placeholder="CEP (ex: 70040-010)">
+        <input type="text" id="novoLogradouro" placeholder="Logradouro">
+        <input type="text" id="novoBairro" placeholder="Bairro">
+        <input type="text" id="novaCidade" placeholder="Cidade">
+        <input type="text" id="novoEstado" placeholder="Estado (ex: DF)">
+        <button id="adicionarCep">Cadastrar</button>
+      </section>
+
+      <div id="resultado" class="resultado"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 OTI Software | Consulta CEP</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
